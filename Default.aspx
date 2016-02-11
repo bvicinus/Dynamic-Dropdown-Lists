@@ -11,7 +11,7 @@
     <div>
     
         <br />
-        <br />
+        Population of Largest U.S. Cities<br />
         <br />
         <br />
         <asp:Label ID="lblState" runat="server" Text="Select State:"></asp:Label>
@@ -19,10 +19,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="lblCity" runat="server" Text="Select City:"></asp:Label>
         <br />
-        <asp:DropDownList ID="ddlState" runat="server" Height="19px" Width="141px">
+        <asp:DropDownList ID="ddlState" runat="server" Height="19px" Width="141px" AutoPostBack="True" OnSelectedIndexChanged="ddlState_SelectedIndexChanged">
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="ddlCities" runat="server" Height="19px" Width="141px">
+        <asp:DropDownList ID="ddlCities" runat="server" Height="19px" Width="141px" AutoPostBack="True" OnSelectedIndexChanged="ddlCities_SelectedIndexChanged">
         </asp:DropDownList>
 &nbsp;
         <asp:Label ID="lblPopulation" runat="server" Text="Population"></asp:Label>
